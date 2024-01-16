@@ -1,0 +1,21 @@
+.home {
+  height: 2000px;
+
+  .header {
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+
+    .logo {
+      width: 80px;
+    }
+  }
+
+  .title-area {
+    height: 120px;
+    border-bottom: 1px solid #eee;
+  }
+}
