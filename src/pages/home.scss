@@ -1,21 +1,123 @@
 .home {
   height: 2000px;
 
+  .isFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
   .header {
     display: flex;
+    width: 100%;
     height: 40px;
     line-height: 40px;
     border-bottom: 1px solid #eee;
     box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.2);
-    padding: 0 20px;
+    padding: 0 40px;
+    background-color: #fff;
 
     .logo {
-      width: 80px;
+      width: 100px;
+    }
+
+    .inner {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      .left {
+        display: flex;
+        justify-content: flex-start;
+
+        .tab {
+          padding: 0 20px;
+        }
+      }
+
+      .center {
+        display: flex;
+
+        Input {
+          width: 300px;
+          margin: 6px;
+        }
+
+        Button {
+          height: 27px;
+          margin: 6px;
+          line-height: 16px;
+        }
+      }
+
+      .right {
+        display: flex;
+        font-size: 12px;
+
+        .info,
+        .letter {
+          display: flex;
+          flex-direction: column;
+          width: 40px;
+          align-items: center;
+
+          span {
+            line-height: 0;
+            margin-top: 8px;
+          }
+        }
+
+        .avatar {
+          width: 40px;
+          margin: 5px;
+
+          img {
+            width: 30px;
+            height: 30px;
+            background-color: #eee;
+          }
+        }
+      }
+
     }
   }
 
   .title-area {
-    height: 120px;
+    display: flex;
+    height: 160px;
     border-bottom: 1px solid #eee;
+    margin: 60px 140px 20px;
+    padding: 0 20px;
+
+    .left {
+      width: 70%;
+
+      .label {
+        height: 25px;
+        line-height: 25px;
+
+        span {
+          display: inline-block;
+          width: 80px;
+          height: 100%;
+          padding: 0 8px;
+          background-color: #eee;
+          text-align: center;
+          border-radius: 10px;
+          margin-right: 10px;
+        }
+      }
+
+      .title {
+        font-size: 30px;
+        font-weight: 800;
+        margin-top: 10px;
+      }
+
+      .footer {
+        margin-top: 30px;
+      }
+    }
   }
 }
